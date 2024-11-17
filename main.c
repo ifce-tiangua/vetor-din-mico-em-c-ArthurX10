@@ -1,7 +1,7 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-int main(){
+int main() {
     int tam, *vet, i;
 
     scanf("%d", &tam);
@@ -13,10 +13,14 @@ int main(){
             scanf("%d", &vet[i]);
         }
 
+        printf("[");
         for (i = 0; i < tam; i++) {
-            printf("%d ", vet[i]);
+            printf("%d", vet[i]);
+            if (i < tam - 1) {
+                printf(", ");
+            }
         }
-        printf("\n");
+        printf("]\n");
 
         free(vet);
     }
