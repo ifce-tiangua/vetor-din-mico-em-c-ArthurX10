@@ -1,10 +1,15 @@
-#include <stdio.h>
+#include<stdio.h>
 #include <stdlib.h>
 
 int main() {
     int tam, *vet, i;
 
     scanf("%d", &tam);
+
+     if (tam ==0) {
+        printf("[vazio]");
+        return;
+    }
 
     vet = malloc(tam * sizeof(int));
 
@@ -27,3 +32,4 @@ int main() {
 
     return 0;
 }
+
